@@ -164,18 +164,36 @@
 
         <div id="main" >
             <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 ></h2></a>
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >化学、生物学科资料$\LaTeX$排版</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <h1 id="gxf1212-github-io"><a href="#gxf1212-github-io" class="headerlink" title="gxf1212.github.io"></a>gxf1212.github.io</h1><p>这是我的个人博客。很多内容还没有完成。</p>
-<h2 id="life"><a href="#life" class="headerlink" title="life"></a>life</h2><p>我的初衷是，记录我的人生轨迹，从说说和杂记中提取点滴精华，读来人生就如故事，老去之后能有份回忆。</p>
-<p>past可能也会归到此类，不过会改名字（注明人生阶段）。</p>
+                <h2 id="化学部分"><a href="#化学部分" class="headerlink" title="化学部分"></a>化学部分</h2><p>仔细阅读mhchem宏包说明。需要用该宏包的地方有：</p>
 <ul>
-<li>category：life；past</li>
-<li>tag：high school；memory；looking forward；family；scenery；poems</li>
+<li><strong>任何</strong>分子、离子、方程式，注意上下标格式与数学公式的不同</li>
+<li><strong>任何</strong>基团、化学键，而且必要时包括“一杠”，如亚甲基</li>
+<li>我认为s、p、d、f也应该在$\verb|\ce{}|$范围内</li>
 </ul>
-<h2 id="study"><a href="#study" class="headerlink" title="study"></a>study</h2><p>记录一些业余学习探究、软件使用经验。但目前水平太菜，还没写出来。</p>
+<p>不推荐chemfig宏包，可以用图片代替</p>
+<h2 id="数学部分"><a href="#数学部分" class="headerlink" title="数学部分"></a>数学部分</h2><ul>
+<li>任何用到<strong>公式、包含计算、物理量</strong>的地方必须使用数学环境，正常英文一定不要数学环境</li>
+<li><strong>单位</strong>都使用$\verb|\mathrm{}|$</li>
+<li>即使是单独出现的<strong>百分号、数字</strong>（表示列表除外）、数学运算符号，最好都在数学环境内，就是说能不用数学环境也要用</li>
+<li>算式的各种括号使用左右<strong>定界符</strong>，即$\verb|\left( bulabula \right)|$</li>
+</ul>
+<h2 id="一般规范"><a href="#一般规范" class="headerlink" title="一般规范"></a>一般规范</h2><ul>
+<li>除了数学算式的符号、化学式，全部使用中文标点（最起码要统一）</li>
+<li>建议少用非数学环境的减号，推荐使用冒号、汉字（如“为”、“是”）等</li>
+</ul>
+<h2 id="关于复制粘贴Word稿"><a href="#关于复制粘贴Word稿" class="headerlink" title="关于复制粘贴Word稿"></a>关于复制粘贴Word稿</h2><p>常见丢失的符号有：</p>
+<ul>
+<li>希腊字母；</li>
+<li>word公式；</li>
+<li>科学计数法；</li>
+<li>一些标点，如~，可用$\verb|\sim|$代替；</li>
+<li>摄氏度符号等，可用$\verb|\textcelsius|$；</li>
+<li></li>
+</ul>
 
             </div>
 
@@ -238,8 +256,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/README.html';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://yoursite.com/README.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://yoursite.com/2020/05/20/LaTeX_chemistry_typeset_norms/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2020/05/20/LaTeX_chemistry_typeset_norms/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
